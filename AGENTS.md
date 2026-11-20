@@ -77,7 +77,7 @@ xtask/  layers | wasm | ci | version | ico | icns
 - Commands live in `crates/engine/src/*_cmds.rs`, registered in `commands.rs`; menu items come from the catalog in `crates/ui-egui/src/menus.rs`. A programmatic call runs a command with defaults; only `ui.menu.invoke` behaves like a menu click.
 - The engine is a CPU oracle (rayon); undo is snapshots (`Session::edit`).
 - `unsafe`: none; the workspace forbids it (`unsafe_code = "forbid"`). Every production crate root carries the `#![deny(clippy::unwrap_used, ...)]` attribute.
-- Attribution file: `ATTRIBUTION.md`. Brand files in `docs/brand/` are under `docs/brand/LICENSE-brand.txt`. Fonts come from storytold/craft-fonts. Code style: `CODE_STYLE.md`.
+- Attribution file: `ATTRIBUTION.md`. Brand files in `docs/brand/` are under `docs/brand/LICENSE-brand.txt`. Fonts come from storytold/craft-fonts.
 - `plan/` and `log/` are gitignored local notebooks; the dev log is `log/devlog.md`. There is no committed progress-log directory.
 - Every node is a `NodeDef` plus a pure cook function in `crates/nodes`; `.mcmat` fields and ids are described in `docs/control-protocol.md` (Portable materials).
 
