@@ -63,7 +63,7 @@ The key words MUST, MUST NOT, SHOULD, SHOULD NOT and MAY are used as in RFC 2119
 ## This repository
 <!-- craft-agents:end -->
 
-MaterialCraft is an open-source, native node-based procedural material designer in Rust: a native egui/eframe app on wgpu, a headless CLI and MCP server, and the same app in the browser (trunk, wasm-bindgen). The project format is `.sbs`; `.mcmat` portable materials are read by TextureCraft with its own code. Crates are `materialcraft-*`; the product name is written MaterialCraft. TextureCraft is the sibling its xtask, automation, packaging, docking and theme were copied from. Start with `docs/architecture.md`, `docs/control-protocol.md`, `ROADMAP.md`, `docs/target-app-parity.md` and `docs/gaps.md`.
+MaterialCraft is an open-source, native node-based procedural material designer in Rust: a native egui/eframe app on wgpu, a headless CLI and MCP server, and the same app in the browser (trunk, wasm-bindgen). The project format is `.sbs`; `.mcmat` portable materials are exchanged with TextureCraft through the shared `craft-mcmat` format crate (craft-libs); each app keeps its own models and policy. Crates are `materialcraft-*`; the product name is written MaterialCraft. TextureCraft is the sibling its xtask, automation, packaging, docking and theme were copied from. Start with `docs/architecture.md`, `docs/control-protocol.md`, `ROADMAP.md`, `docs/target-app-parity.md` and `docs/gaps.md`.
 
 ### Layout
 ```text
